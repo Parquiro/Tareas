@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Tareas</title> //Angel Portillo. CI: 30.238.563
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Lista de Tareas</h1>
+    <form id="task-form">
+        <input type="text" id="task-input" placeholder="Agregar nueva tarea">
+        <select id="task-category">
+            <option value="personal">Personal</option>
+            <option value="trabajo">Trabajo</option>
+            <option value="estudio">Estudio</option>
+        </select>
+        <input type="submit" value="Agregar">
+    </form>
+    <div class="category-list">
+        <h2>Personal</h2>
+        <ul id="personal-list" class="task-list"></ul>
+    </div>
+    <div class="category-list">
+        <h2>Trabajo</h2>
+        <ul id="trabajo-list" class="task-list"></ul>
+    </div>
+    <div class="category-list">
+        <h2>Estudio</h2>
+        <ul id="estudio-list" class="task-list"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
